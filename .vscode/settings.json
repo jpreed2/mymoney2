@@ -62,5 +62,7 @@
     "pcss",
     "postcss",
     "github-actions-workflow"
-  ]
+  ],
+  "claudeCodeChat.permissions.yoloMode": true,
+  "remote.autoForwardPorts": false
 }
