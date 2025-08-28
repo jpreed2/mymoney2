@@ -29,6 +29,12 @@ export default antfu(
     // Ignored paths
     ignores: [
       'migrations/**/*',
+      // Flat config does NOT ignore node_modules by default. Linting them caused a syntax error
+      // when encountering an experimental import attributes test fixture ("with { type: 'json' }").
+      // We explicitly ignore all third-party code.
+      'node_modules/**/*',
+      'dist/**/*',
+      'coverage/**/*',
     ],
   },
   // --- Accessibility Rules ---
